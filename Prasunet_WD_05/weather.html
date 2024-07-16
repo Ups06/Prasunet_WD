@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherLY</title>
+    <link rel="stylesheet" href="stylesWeather.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+   
+    <div class="wrapper">
+       <header><i class="ph ph-arrow-square-left"></i>Weather App</header> 
+       <section class="inputPart">
+            <p class="info-txt"></p>
+            <input type="text" placeholder="Enter City Name" spellcheck="false" required>
+            <div class="separator"></div>
+            <button>Get Device's Location</button>
+       </section>
+       <section class="weather-part">
+        <img src="weatherImg/clouds.png" alt="Weather Icon">
+        <div class="temp">
+            <span class="numb">_</span>
+            <span class="deg">°</span>C
+        </div>
+        <div class="weather">_ _</div>
+        <div class="location">
+            <i class="ph ph-map-pin-line"></i>
+            <span>_, _</span>
+        </div>
+        <div class="bottom-details">
+            <div class="column Feels">
+                <i class="ph ph-thermometer-simple"></i>
+                <div class="details">
+                    <div class="temp">
+                        <span class="numb-2">_</span>
+                        <span class="deg">°</span>C
+                    </div>
+                    <p>Feels like</p>
+                </div>
+            </div>
+            <div class="column Humidity">
+                <i class="ph ph-drop-half"></i>
+                <div class="details">
+                    <span>_</span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+        </div>
+       </section>
+    </div>
+
+
+
+    <script src="scriptWeather.js"></script>
+</body>
+</html>
